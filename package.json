@@ -1,0 +1,20 @@
+{
+  "name": "cypress_bdd_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "loginTableTest": "npx cypress run tags='@loginTable'",
+    "test": "npx cypress run",
+    "specRun": "cypress run --spec cypress/e2e/features/loginTwo.feature",
+    "test:or": "npx cypress run --env tags='@IncorrectLogin and @loginTable'",
+    "test:And": "npx cypress run --env tags='@IncorrectLogin and @loginTable'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.9.0"
+  }
+}
