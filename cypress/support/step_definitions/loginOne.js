@@ -16,3 +16,8 @@ Then('I should be logged in', (password) => {
   cy.get('button').contains('Login').click();
   cy.url().should('not.contain', 'login');
 });
+
+Then('I should not be logged in', () => {
+  cy.get('button').contains('Login').click();
+  cy.url().should('contain', 'login');
+});

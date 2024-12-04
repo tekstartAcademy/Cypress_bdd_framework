@@ -11,6 +11,6 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: '**/*.feature',
-    //defaultCommandTimeout: 10000,
+    defaultCommandTimeout: 10000,
   },
 });
